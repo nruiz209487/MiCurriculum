@@ -174,6 +174,21 @@ class Animations {
     }
 }
 
+// ==================== COPIAR CORREO AL PORTAPAPELES ====================
+document.addEventListener('DOMContentLoaded', function() {
+    const copyBtn = document.getElementById('copyEmailBtn');
+    const emailInput = document.getElementById('emailInput');
+    const copyMsg = document.getElementById('copyMsg');
+    if(copyBtn) {
+        copyBtn.addEventListener('click', function() {
+            navigator.clipboard.writeText(emailInput.value).then(function() {
+                copyMsg.style.display = 'inline';
+                setTimeout(() => copyMsg.style.display = 'none', 1500);
+            });
+        });
+    }
+});
+
 // ==================== INICIALIZACIÓN ====================
 class App {
     constructor() {
@@ -210,3 +225,4 @@ class App {
 document.addEventListener('DOMContentLoaded', () => {
     new App();
 });
+

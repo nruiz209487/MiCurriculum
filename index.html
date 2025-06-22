@@ -229,14 +229,32 @@
 
     <section id="contact" class="section-padding" style="background: #f8f9fa;">
         <div class="container">
-            <h2 class="section-title fade-in">Contáctame</h2>
-            <div class="row">
-                <div class="col-lg-8 mx-auto fade-in">
-                    <div class="card card-custom p-5 text-center">
-                        <p class="mb-4">¿Te gustaría ponerte en contacto conmigo?</p>
-                        <a href="https://www.linkedin.com/in/neos-rafael-ru%C3%ADz-s%C3%A1nchez-542453314/en" target="_blank" class="btn btn-linkedin">
-                            <i class="fab fa-linkedin me-2"></i> Ir a mi LinkedIn
-                        </a>
+            <h2 class="section-title fade-in text-center mb-5">Contáctame</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-7 fade-in">
+                    <div class="card card-custom shadow-sm p-4">
+                        <div class="mb-4 d-flex justify-content-center">
+                            <p class="lead text-center mb-0">¿Te gustaría ponerte en contacto conmigo?</p>
+                        </div>
+                        <div class="row justify-content-center mb-4">
+                            <div class="col-auto">
+                                <a href="https://www.linkedin.com/in/neos-rafael-ru%C3%ADz-s%C3%A1nchez-542453314/en" target="_blank" class="btn btn-outline-primary">
+                                    <i class="fab fa-linkedin me-2"></i> LinkedIn
+                                </a>
+                            </div>
+                            <div class="col-auto">
+                                <a href="cv/neos-rafael-cv.pdf"  class="btn btn-outline-secondary" download>
+                                    <i class="fas fa-download me-2"></i> Descargar currículum
+                                </a>
+                            </div>
+                        </div>
+                        <div class="input-group mb-2">
+                            <input type="text" class="form-control" id="emailInput" value="neoruisan@gmail.com" readonly>
+                            <button class="btn btn-primary" type="button" id="copyEmailBtn">
+                                <i class="fas fa-copy"></i> Copiar
+                            </button>
+                        </div>
+                        <small id="copyMsg" class="text-success text-center" style="display:none;">¡Correo copiado!</small>
                     </div>
                 </div>
             </div>
