@@ -54,7 +54,9 @@ class Navigation {
         const targetElement = utils.getElement(anchor.getAttribute("href"));
 
         if (targetElement) {
-          const offsetPosition = targetElement.offsetTop - config.navbarHeight;
+          const extraOffset = -40;
+          const offsetPosition =
+            targetElement.offsetTop - config.navbarHeight - extraOffset;
           utils.smoothScroll(offsetPosition);
         }
       });
