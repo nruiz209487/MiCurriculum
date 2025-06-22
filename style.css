@@ -24,18 +24,89 @@ body {
 .navbar {
   background: rgba(255, 255, 255, 0.95) !important;
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
+  transition: all 0.3s ease !important;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.navbar.scrolled {
+  background: rgba(255, 255, 255, 0.98) !important;
+  backdrop-filter: blur(15px) !important;
+  -webkit-backdrop-filter: blur(15px) !important;
+}
+
+#tecnologias {
+  background-color: #f8f9fa !important;
+  background-image: none !important;
+  background: #f8f9fa !important;
+  position: relative;
+  padding: 100px 0;
+}
+
+#tecnologias::before,
+#tecnologias::after {
+  display: none !important;
+  content: none !important;
+}
+
+#services {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  background-image: none !important;
+}
+
+#services::before,
+#services::after {
+  display: none !important;
+  content: none !important;
+}
+
+#about {
+  background: #f8f9fa !important;
+  background-color: #f8f9fa !important;
+  position: relative;
+}
+
+#portfolio {
+  padding: 100px 0;
+  background: #f8f9fa !important;
+  background-color: #f8f9fa !important;
+  position: relative;
+}
+
+#contact {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  background-image: none !important;
+}
+
+/* ==================== CONTENEDOR PRINCIPAL ==================== */
+.container,
+.container-fluid {
+  background: transparent !important;
+}
+
+/* ==================== HERO SECTION ==================== */
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #2d5595 100%) !important;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding-top: 70px;
+}
+
+/* ====================  NAVBAR STYLES ==================== */
 .navbar-brand {
   font-weight: 700;
   font-size: 1.5rem;
-  background: var(--gradient);
+  background: linear-gradient(135deg, #667eea 0%, #2d5595 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -43,15 +114,19 @@ body {
 
 .nav-link {
   font-weight: 500;
-  color: var(--dark-color) !important;
+  color: #2c3e50 !important;
   margin: 0 10px;
   position: relative;
   transition: all 0.3s ease;
 }
 
 .nav-link:hover {
-  color: var(--primary-color) !important;
+  color: #667eea !important;
   transform: translateY(-2px);
+}
+
+.nav-link.active {
+  color: #667eea !important;
 }
 
 .nav-link::after {
@@ -61,15 +136,15 @@ body {
   height: 2px;
   bottom: -5px;
   left: 50%;
-  background: var(--gradient);
+  background: linear-gradient(135deg, #667eea 0%, #2d5595 100%);
   transition: all 0.3s ease;
   transform: translateX(-50%);
 }
 
-.nav-link:hover::after {
+.nav-link:hover::after,
+.nav-link.active::after {
   width: 80%;
 }
-
 /* ==================== HERO SECTION ==================== */
 .hero {
   min-height: 100vh;
@@ -92,7 +167,6 @@ body {
   animation: float 20s ease-in-out infinite;
 }
 
-/* Icono flotante centrado a la derecha */
 .hero-image-container {
   position: relative;
   height: 100%;
@@ -231,7 +305,6 @@ body {
   padding: 100px 0;
 }
 
-/* Eliminar cualquier pseudo-elemento que cause el fondo azul */
 #tecnologias::before,
 #tecnologias::after {
   display: none !important;
