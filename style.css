@@ -92,50 +92,68 @@ body {
 }
 
 /* ====================  NAVBAR STYLES ==================== */
-.navbar-brand {
-  font-weight: 700;
-  font-size: 1.5rem;
-  color: #2c3e50 !important;
-  text-shadow: 0 2px 8px #667eea33;
-}
-.nav-link:hover {
-  color: #667eea !important;
-  transform: translateY(-2px);
-}
-.nav-link {
-  font-weight: 500;
-  color: #2c3e50 !important;
-  margin: 0 10px;
-  position: relative;
-  transition: all 0.3s ease;
-}
-
-.nav-link:hover {
-  color: #667eea !important;
-  transform: translateY(-2px);
-}
-
-.nav-link.active {
-  color: #667eea !important;
-}
-
-.nav-link::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: -5px;
-  left: 50%;
-  background: linear-gradient(135deg, #667eea 0%, #2d5595 100%);
-  transition: all 0.3s ease;
-  transform: translateX(-50%);
+/* Estilo original para Mobile */
+@media (max-width: 991px) {
+  .navbar-nav {
+    text-align: center;
+  }
+  
+  .nav-link {
+    font-weight: 500;
+    color: #2c3e50 !important;
+    margin: 10px 0;
+    position: relative;
+    transition: all 0.3s ease;
+    display: block;
+    text-align: center !important;
+    padding: 10px 0 !important;
+  }
+  
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 5px;
+    left: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #2d5595 100%);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+  }
+  
+  .nav-link:hover::after,
+  .nav-link.active::after {
+    width: 60px; 
+  }
 }
 
-.nav-link:hover::after,
-.nav-link.active::after {
-  width: 80%;
+/* Estilo original para desktop */
+@media (min-width: 992px) {
+  .nav-link {
+    font-weight: 500;
+    color: #2c3e50 !important;
+    margin: 0 10px;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #2d5595 100%);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+  }
+  
+  .nav-link:hover::after,
+  .nav-link.active::after {
+    width: 80%;
+  }
 }
-
 /* ==================== HERO SECTION ==================== */
 .hero {
   min-height: 100vh;
@@ -429,7 +447,11 @@ body {
 
 /* ==================== SERVICIOS SECTION ==================== */
 #services {
-  background: var(--white) !important;
+  background: #f8f9fa !important;
+  background-color: #f8f9fa !important;
+  background-image: none !important;
+  position: relative;
+  z-index: 2;
 }
 
 .card-custom {
