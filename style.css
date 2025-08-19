@@ -612,6 +612,39 @@ body {
   font-weight: 500;
 }
 
+/* ==================== LANGUAGES ==================== */
+#languages {
+  background-color: var(--light-bg) !important;
+  position: relative;
+  padding: 100px 0;
+}
+
+.languages-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--dark-color);
+  margin-bottom: 15px;
+}
+
+.languages-description {
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+.languages-item {
+  background-color: transparent; 
+  overflow: hidden;
+  margin-bottom: 40px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform: translateY(0);
+}
+
+.languages-item:hover {
+  transform: translateY(-10px);
+  background-color: transparent; 
+}
+
 /* ==================== CONTACT SECTION ==================== */
 #contact {
   background: var(--white) !important;
