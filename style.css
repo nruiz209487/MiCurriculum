@@ -120,7 +120,7 @@ body {
 /* ==================== HERO SECTION ==================== */
 .hero {
   min-height: 100vh;
-  background: url("img/wallpaper.png") center/cover no-repeat;
+  background: url("img/wallpaper.webp") center/cover no-repeat;
   display: flex;
   align-items: center;
   position: relative;
