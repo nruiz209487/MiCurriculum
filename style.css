@@ -405,21 +405,21 @@ body {
     gap: 16px;
     align-items: flex-start;
   }
-  
+
   .company-logo {
     width: 100px;
     height: 65px;
   }
-  
+
   .experience-item {
     padding: 24px 20px;
     margin-bottom: 20px;
   }
-  
+
   .experience-info h3 {
     font-size: 1.1rem;
   }
-  
+
   .experience-meta {
     flex-direction: column;
     gap: 8px;
@@ -664,8 +664,8 @@ body {
 }
 
 .tech-badge {
-  background: rgba(102, 126, 234, 0.1);
-  color: var(--primary-color);
+  background: rgba(214, 221, 254, 0.51);
+  color: rgba(7, 42, 199, 0.51);
   padding: 6px 15px;
   border-radius: 50px;
   font-size: 0.85rem;
