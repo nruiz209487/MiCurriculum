@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="icon" href="img\avatarProfilePic.png" type="image/x-icon" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Rafael Ruiz Sanchez - Junior Developer specialized in SalesForce and web technologies. Here you can see my resume, experience and contact."
+      content="Rafael Ruiz Sanchez - Developer specialized in SalesForce and web technologies. Here you can see my resume, experience and contact."
     />
 
     <!-- Open Graph -->
     <meta
       property="og:title"
-      content="Rafael Ruiz Sanchez - Junior Developer"
+      content="Rafael Ruiz Sanchez - SalesForce Developer"
     />
     <meta
       property="og:description"
@@ -33,7 +34,7 @@
     <meta name="twitter:creator" content="@nruiz209487" />
     <meta
       name="twitter:title"
-      content="Rafael Ruiz Sanchez - Junior Developer"
+      content="Rafael Ruiz Sanchez - SalesForce Developer"
     />
     <meta name="twitter:description" content="My online portfolio and CV." />
     <meta
@@ -56,19 +57,14 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container">
         <img
           src="img/profilePic.jpg"
           alt="About me"
-          class="rounded-circle"
-          style="
-            width: 40px;
-            height: 40px;
-            object-fit: cover;
-            margin-right: 10px;
-          "
+          class="rounded-circle profile-pic"
         />
         <a class="navbar-brand" href="#home">Rafael Ruiz Sanchez</a>
         <button
@@ -76,6 +72,7 @@
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
+          aria-label="Abrir menú de navegación"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -85,16 +82,16 @@
               <a class="nav-link" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About me</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#experience">Experience</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#tecnologias">Technologies</a>
+              <a class="nav-link" href="#technologies">Technologies</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#services">Services</a>
+              <a class="nav-link" href="#devops">DevOps</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#portfolio">Projects</a>
@@ -102,8 +99,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#languages">Languages</a>
             </li>
+
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact me</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -115,12 +113,7 @@
         <div class="row align-items-center">
           <div class="col-lg-6">
             <div class="hero-content">
-              <h1>
-                Hi, I'm Rafael<br /><span
-                  style="color: rgba(255, 255, 255, 0.9)"
-                  >Full Stack Developer</span
-                >
-              </h1>
+              <h1>Hi, I'm Rafael<br /><span>Full Stack Developer</span></h1>
               <p class="lead">
                 Specialist in web development across multiple frameworks and
                 technologies. Discover my featured projects and how I can help
@@ -130,6 +123,7 @@
                 <a
                   href="https://www.linkedin.com/in/neos-rafael-ru%C3%ADz-s%C3%A1nchez-542453314/en"
                   target="_blank"
+                  rel="noopener"
                   class="btn btn-hero"
                 >
                   <i class="fab fa-linkedin-in me-2"></i> LinkedIn
@@ -137,6 +131,7 @@
                 <a
                   href="https://github.com/nruiz209487"
                   target="_blank"
+                  rel="noopener"
                   class="btn btn-hero btn-github"
                 >
                   <i class="fab fa-github me-2"></i> GitHub
@@ -147,14 +142,8 @@
           <div
             class="col-lg-6 d-flex justify-content-center align-items-center"
           >
-            <div
-              class="hero-image"
-              style="animation: float 6s ease-in-out infinite"
-            >
-              <i
-                class="fas fa-laptop-code"
-                style="font-size: 10rem; color: rgba(255, 255, 255, 0.3)"
-              ></i>
+            <div class="hero-image">
+              <i class="fas fa-laptop-code icon-blur"></i>
             </div>
           </div>
         </div>
@@ -209,7 +198,7 @@
                 class="company-logo"
               />
               <div class="experience-info">
-                <h3>Full Stack Developer</h3>
+                <h3>Full Stack Developer Intern</h3>
                 <div class="company-name">Bluumi Mobile Apps</div>
                 <div class="experience-meta">
                   <div class="meta-item">
@@ -225,10 +214,29 @@
             </div>
             <div class="experience-description">
               <p>
-                Active participation in web projects using technologies such as
-                Docker, Blade, Node.js, AdminLTE, PHP and PHPUnit, with special
-                emphasis on the Laravel framework.
+                Participation in the development of ERP and e-commerce modules
+                using
+                <strong>Laravel, PHP, PHPUnit, Blade, Node.js, AdminLTE</strong>
+                and <strong>Docker</strong>.
               </p>
+              <ul>
+                <li>
+                  Improved deployed ERP modules for a retail system by
+                  integrating filters, enhancing search functionalities, and
+                  fixing existing pages.
+                </li>
+                <li>
+                  Developed an ERP-synchronized e-commerce MVP with user
+                  registration, addresses, orders, cart, middleware, filtering,
+                  and search in only 3 weeks.
+                </li>
+                <li>
+                  Introduced <strong>PHPUnit testing practices</strong> in
+                  projects that previously lacked automated tests, connecting to
+                  an external database with predefined test cases covering CRUD
+                  operations and middleware logic.
+                </li>
+              </ul>
             </div>
           </div>
 
@@ -263,100 +271,124 @@
       </div>
     </section>
 
-    <section
-      id="tecnologias"
-      class="section-padding"
-      style="background-color: #f1f1f1"
-    >
+    <section id="technologies" class="section-padding">
       <div class="container">
         <h2 class="section-title fade-in">Technologies</h2>
         <div class="row">
+          <!-- Salesforce / Apex -->
           <div class="col-md-3 col-sm-6 mb-4 text-center">
-            <i class="fab fa-laravel fa-2x mb-2"></i>
-            <h5>Laravel</h5>
-            <p>Modern PHP framework for robust and scalable web development.</p>
-          </div>
-          <div class="col-md-3 col-sm-6 mb-4 text-center">
-            <i class="fab fa-android fa-2x mb-2"></i>
-            <h5>Kotlin / Jetpack</h5>
+            <i class="fab fa-salesforce fa-2x mb-2 icon-salesforce"></i>
+            <h5>Salesforce / Apex</h5>
             <p>
-              Development of native mobile applications for Android using Kotlin
-              and Jetpack Compose.
+              Custom development on Salesforce platform using Apex and Lightning
+              components.
             </p>
           </div>
+          <!-- HTML / CSS / JS -->
           <div class="col-md-3 col-sm-6 mb-4 text-center">
-            <i class="fab fa-angular fa-2x mb-2"></i>
-            <h5>Angular / React</h5>
-            <p>Modern SPAs with TypeScript, reusable components and RxJS.</p>
-          </div>
-          <div class="col-md-3 col-sm-6 mb-4 text-center">
-            <i class="fas fa-database fa-2x mb-2"></i>
-            <h5>Firebase / MySQL</h5>
-            <p>Real-time databases, authentication and secure storage.</p>
-          </div>
-          <div class="col-md-3 col-sm-6 mb-4 text-center">
-            <i class="fab fa-microsoft fa-2x mb-2"></i>
-            <h5>.NET</h5>
-            <p>
-              Platform for scalable and secure web, mobile and desktop
-              applications.
-            </p>
-          </div>
-          <div class="col-md-3 col-sm-6 mb-4 text-center">
-            <i class="fab fa-java fa-2x mb-2"></i>
-            <h5>Java / Apex</h5>
-            <p>
-              Robust languages for enterprise applications. Apex, derived from
-              Java, is used in Salesforce.
-            </p>
-          </div>
-          <div class="col-md-3 col-sm-6 mb-4 text-center">
-            <i class="fab fa-python fa-2x mb-2"></i>
-            <h5>Python / Django</h5>
-            <p>Fast and secure framework for web development with Python.</p>
-          </div>
-          <div class="col-md-3 col-sm-6 mb-4 text-center">
-            <i class="fab fa-html5 fa-2x mb-2"></i>
+            <i class="fab fa-html5 fa-2x mb-2 icon-html5"></i>
             <h5>HTML / CSS / JS</h5>
             <p>
               Fundamental trio for creating modern, interactive and responsive
               web interfaces.
             </p>
           </div>
+          <!-- Java -->
+          <div class="col-md-3 col-sm-6 mb-4 text-center">
+            <i class="fab fa-java fa-2x mb-2 icon-java"></i>
+            <h5>Java</h5>
+            <p>
+              Robust language for general-purpose and enterprise applications.
+            </p>
+          </div>
+          <!-- MySQL / APIs -->
+          <div class="col-md-3 col-sm-6 mb-4 text-center">
+            <i class="fas fa-database fa-2x mb-2 icon-sql"></i>
+            <h5>MySQL / APIs</h5>
+            <p>
+              Database management and API integrations for backend services.
+            </p>
+          </div>
+          <!-- Python / Django -->
+          <div class="col-md-3 col-sm-6 mb-4 text-center">
+            <i class="fab fa-python fa-2x mb-2 icon-python"></i>
+            <h5>Python / Django</h5>
+            <p>Fast and secure framework for web development with Python.</p>
+          </div>
+          <!-- Angular / React -->
+          <div class="col-md-3 col-sm-6 mb-4 text-center">
+            <i class="fab fa-angular fa-2x mb-2 icon-angular"></i>
+            <h5>Angular / React</h5>
+            <p>Modern SPAs with TypeScript, reusable components and RxJS.</p>
+          </div>
+          <!-- Laravel -->
+          <div class="col-md-3 col-sm-6 mb-4 text-center">
+            <i class="fab fa-laravel fa-2x mb-2 icon-laravel"></i>
+            <h5>Laravel</h5>
+            <p>Modern PHP framework for robust and scalable web development.</p>
+          </div>
+          <!-- Kotlin / Jetpack -->
+          <div class="col-md-3 col-sm-6 mb-4 text-center">
+            <i class="fab fa-android fa-2x mb-2 icon-android"></i>
+            <h5>Kotlin / Jetpack</h5>
+            <p>Native Android development for mobile applications.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="services" class="section-padding" style="background: #f8f9fa">
+    <section id="devops" class="section-padding">
       <div class="container">
-        <h2 class="section-title fade-in">My services</h2>
+        <h2 class="section-title fade-in">DevOps</h2>
         <div class="row">
-          <div class="col-lg-4 col-md-6 mb-4 fade-in">
-            <div class="card card-custom text-center p-4">
-              <div class="card-icon"><i class="fas fa-code"></i></div>
-              <h4>Web development</h4>
-              <p>Building complete web applications at competitive prices.</p>
-            </div>
+          <!-- Git -->
+          <div class="col-md-3 col-sm-6 mb-4 text-center">
+            <i class="fab fa-git-alt fa-2x mb-2 icon-git"></i>
+            <h5>Git</h5>
+            <p>
+              Version control and collaborative workflows using terminal or GUI
+              tools.
+            </p>
           </div>
-          <div class="col-lg-4 col-md-6 mb-4 fade-in">
-            <div class="card card-custom text-center p-4">
-              <div class="card-icon"><i class="fas fa-mobile-alt"></i></div>
-              <h4>Mobile applications</h4>
-              <p>
-                Development of native mobile applications for Android using
-                Kotlin and Jetpack Compose.
-              </p>
-            </div>
+          <!-- Docker -->
+          <div class="col-md-3 col-sm-6 mb-4 text-center">
+            <i class="fab fa-docker fa-2x mb-2 icon-docker"></i>
+            <h5>Docker</h5>
+            <p>
+              Build, run, and debug containers with Dockerfiles; integration
+              with VS Code for local development.
+            </p>
           </div>
-          <div class="col-lg-4 col-md-6 mb-4 fade-in">
-            <div class="card card-custom text-center p-4">
-              <div class="card-icon"><i class="fas fa-database"></i></div>
-              <h4>Databases</h4>
-              <p>
-                Design and implementation of efficient and secure databases.
-              </p>
-            </div>
+          <!-- PowerShell -->
+          <div class="col-md-3 col-sm-6 mb-4 text-center">
+            <i class="fas fa-terminal fa-2x mb-2 icon-powershell"></i>
+            <h5>PowerShell</h5>
+            <p>
+              Automate repetitive tasks and workflows in Windows using scripts
+              (.ps1) and simple modules.
+            </p>
           </div>
+          <!-- Azure -->
+          <div class="col-md-3 col-sm-6 mb-4 text-center">
+            <i class="fab fa-microsoft fa-2x mb-2 icon-azure"></i>
+            <h5>Azure</h5>
+            <p>
+              Deploying ASP.NET APIs from Visual Studio to Azure App Services.
+            </p>
+          </div>
+          <!-- AWS y Linux (future slot) -->
+          <!--
+          <div class="col-md-3 col-sm-6 mb-4 text-center">
+            <i class="fab fa-aws fa-2x mb-2 icon-aws"></i>
+            <h5>AWS</h5>
+            <p>Cloud computing services for scalable and secure application deployment.</p>
+          </div>
+          <div class="col-md-3 col-sm-6 mb-4 text-center">
+            <i class="fab fa-linux fa-2x mb-2 icon-linux"></i>
+            <h5>Linux</h5>
+            <p>Command-line usage, process management and server administration.</p>
+          </div>
+          -->
         </div>
       </div>
     </section>
@@ -588,9 +620,9 @@
       </div>
     </section>
 
-    <section id="contact" class="section-padding" style="background: #f8f9fa">
+    <section id="contact" class="section-padding">
       <div class="container">
-        <h2 class="section-title fade-in text-center mb-5">Contact me</h2>
+        <h2 class="section-title fade-in text-center mb-5">Contact</h2>
         <div class="row justify-content-center">
           <div class="col-lg-7 fade-in">
             <div class="card card-custom shadow-sm p-5">
@@ -598,22 +630,10 @@
                 class="mb-4 d-flex justify-content-center flex-column align-items-center"
               >
                 <div class="mb-3">
-                  <i
-                    class="fab fa-linkedin"
-                    style="font-size: 2.5rem; color: #0a66c2; margin: 0 10px"
-                  ></i>
-                  <i
-                    class="fab fa-github"
-                    style="font-size: 2.5rem; color: #333; margin: 0 10px"
-                  ></i>
-                  <i
-                    class="fas fa-envelope"
-                    style="font-size: 2.5rem; color: #d44638; margin: 0 10px"
-                  ></i>
-                  <i
-                    class="fas fa-file-download"
-                    style="font-size: 2.5rem; color: #6c757d; margin: 0 10px"
-                  ></i>
+                  <i class="fab fa-linkedin social-icon linkedin"></i>
+                  <i class="fab fa-github social-icon github"></i>
+                  <i class="fas fa-envelope social-icon email"></i>
+                  <i class="fas fa-file-download social-icon download"></i>
                 </div>
                 <p class="lead text-center mb-0">
                   Would you like to get in touch with me?
@@ -628,6 +648,7 @@
                   <a
                     href="https://www.linkedin.com/in/neos-rafael-ru%C3%ADz-s%C3%A1nchez-542453314/en"
                     target="_blank"
+                    rel="noopener"
                     class="btn btn-outline-primary"
                   >
                     <i class="fab fa-linkedin me-2"></i> LinkedIn
@@ -650,6 +671,8 @@
                   id="emailInput"
                   value="neoruisan@gmail.com"
                   readonly
+                  placeholder="Correo electrónico"
+                  title="Este es tu correo registrado"
                 />
                 <button class="btn btn-primary" type="button" id="copyEmailBtn">
                   <i class="fas fa-copy"></i> Copy
@@ -657,10 +680,10 @@
               </div>
               <small
                 id="copyMsg"
-                class="text-success text-center"
-                style="display: none"
-                >Email copied!</small
+                class="text-success text-center hidden-message"
               >
+                Email copied!
+              </small>
               <p class="lead text-center mb-0 mt-3">
                 Feel free to add me on LinkedIn, I'm always happy to make new
                 contacts.
@@ -675,17 +698,22 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-6">
-            <p>&copy; 2025 Building ideas in code!</p>
+            <p id="footer-text"></p>
           </div>
           <div class="col-md-6 text-end">
             <div class="social-links">
               <a
                 href="https://www.linkedin.com/in/neos-rafael-ru%C3%ADz-s%C3%A1nchez-542453314/en"
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-              <a href="https://github.com/nruiz209487"
-                ><i class="fab fa-github"></i
-              ></a>
+                title="LinkedIn de Rafael Ruiz"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a
+                href="https://github.com/nruiz209487"
+                title="GitHub de nruiz209487"
+              >
+                <i class="fab fa-github"></i>
+              </a>
             </div>
           </div>
         </div>

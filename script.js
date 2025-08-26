@@ -32,6 +32,15 @@ const utils = {
   },
 };
 
+const today = new Date();
+const year = today.getFullYear();
+const month = today.toLocaleString("default", { month: "long" });
+const day = today.getDate();
+
+document.getElementById(
+  "footer-text"
+).innerHTML = `&copy; Building ideas in code! — ${day} ${month} ${year}`;
+
 // ==================== NAVEGACIÓN Y SCROLL ====================
 class Navigation {
   constructor() {
