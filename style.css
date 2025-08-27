@@ -251,6 +251,7 @@ body {
   box-shadow: 0 25px 50px rgba(102, 126, 234, 0.2);
   border-color: rgba(102, 126, 234, 0.3);
 }
+
 /* ==================== Experience Section ==================== */
 #experience {
   background: var(--white) !important;
@@ -426,64 +427,6 @@ body {
   }
 }
 
-/* ==================== DEVOPS SECTION ==================== */
-#devops {
-  background-color: var(--light-bg) !important;
-  background-image: none !important;
-  position: relative;
-  padding: 100px 0;
-}
-
-#devops::before,
-#devops::after {
-  display: none !important;
-  content: none !important;
-}
-
-#devops .container {
-  position: relative;
-  z-index: 1;
-}
-
-#devops .col-md-3 {
-  margin-bottom: 2rem;
-}
-
-#devops i {
-  margin-bottom: 1rem;
-}
-
-#devops h5 {
-  color: var(--dark-color);
-  font-weight: 600;
-  margin-bottom: 1rem;
-}
-
-#devops p {
-  color: #666;
-  font-size: 0.9rem;
-}
-
-/* DEVOPS ICON COLORS */
-#devops .icon-git {
-  color: #f05032;
-}
-#devops .icon-docker {
-  color: #2496ed;
-}
-#devops .icon-powershell {
-  color: #0078d7;
-}
-#devops .icon-azure {
-  color: #00a4ef;
-}
-#devops .icon-aws {
-  color: #ff9900;
-}
-#devops .icon-linux {
-  color: #fcc624;
-}
-
 /* ==================== TECHNOLOGIES SECTION ==================== */
 #technologies {
   background-color: var(--light-bg) !important;
@@ -509,17 +452,89 @@ body {
 
 #technologies i {
   margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+  transform: scale(1.5);
+}
+
+#technologies i:hover {
+  transform: scale(1.8);
 }
 
 #technologies h5 {
   color: var(--dark-color);
   font-weight: 600;
   margin-bottom: 1rem;
+  margin-top: 0.6rem;
 }
 
 #technologies p {
   color: #666;
   font-size: 0.9rem;
+}
+
+/* ==================== DEVOPS SECTION ==================== */
+#devops {
+  background-color: var(--light-bg) !important;
+  background-image: none !important;
+  position: relative;
+  padding: 100px 0;
+}
+
+#devops::before,
+#devops::after {
+  display: none !important;
+  content: none !important;
+}
+
+#devops .container {
+  position: relative;
+  z-index: 1;
+}
+
+#devops .col-md-3 {
+  margin-bottom: 2rem;
+}
+
+#devops i {
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+  transform: scale(1.5);
+}
+
+#devops i:hover {
+  transform: scale(1.8);
+}
+
+#devops h5 {
+  color: var(--dark-color);
+  font-weight: 600;
+  margin-bottom: 1rem;
+  margin-top: 0.6rem;
+}
+
+#devops p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* DEVOPS ICON COLORS */
+#devops .icon-git {
+  color: #f05032;
+}
+#devops .icon-docker {
+  color: #2496ed;
+}
+#devops .icon-powershell {
+  color: #0078d7;
+}
+#devops .icon-azure {
+  color: #00a4ef;
+}
+#devops .icon-aws {
+  color: #ff9900;
+}
+#devops .icon-linux {
+  color: #fcc624;
 }
 
 /* TECHNOLOGIES ICON COLORS */
