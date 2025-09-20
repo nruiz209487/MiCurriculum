@@ -55,7 +55,7 @@ body {
 }
 
 /* Estilo original para Mobile */
-@media (max-width: 991px) {
+@media (max-width: 1500px) {
   .navbar-nav {
     text-align: center;
   }
