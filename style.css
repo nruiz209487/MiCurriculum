@@ -540,9 +540,15 @@ body {
   color: #ff9900;
 }
 #devops .icon-linux {
-  color: #fcc624;
+  color: #000000;
 }
-
+#devops .icon-gitlab {
+color: #ff7214;
+}
+#devops .icon-cicd {
+  color: #3995e0;
+}
+ 
 /* TECHNOLOGIES ICON COLORS */
 .icon-laravel {
   color: #ff2d20;
