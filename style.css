@@ -523,58 +523,6 @@ body {
   font-size: 0.9rem;
 }
 
-/* DEVOPS ICON COLORS */
-#devops .icon-git {
-  color: #f05032;
-}
-#devops .icon-docker {
-  color: #2496ed;
-}
-#devops .icon-powershell {
-  color: #0078d7;
-}
-#devops .icon-azure {
-  color: #00a4ef;
-}
-#devops .icon-aws {
-  color: #ff9900;
-}
-#devops .icon-linux {
-  color: #000000;
-}
-#devops .icon-gitlab {
-color: #ff7214;
-}
-#devops .icon-cicd {
-  color: #3995e0;
-}
- 
-/* TECHNOLOGIES ICON COLORS */
-.icon-laravel {
-  color: #ff2d20;
-} /* rojo Laravel */
-.icon-android {
-  color: #3ddc84;
-} /* verde Android */
-.icon-angular {
-  color: #dd0031;
-} /* rojo Angular */
-.icon-sql {
-  color: #b7b5b5;
-} /* blanco MySQL/APIs */
-.icon-microsoft {
-  color: #0078d4;
-} /* azul Microsoft/.NET */
-.icon-java {
-  color: #5382a1;
-} /* azul Java */
-.icon-python {
-  color: #306998;
-} /* azul Python */
-.icon-html5 {
-  color: #e34f26;
-} /* naranja HTML5 */
-
 /* ==================== PORTFOLIO SECTION ==================== */
 #portfolio {
   padding: 100px 0;
