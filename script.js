@@ -7,6 +7,18 @@ const config = {
   observerMargin: "0px 0px -50px 0px",
 };
 
+// loading screen 
+window.addEventListener('load', function() {
+    setTimeout(function() {
+        const loader = document.getElementById('loader-wrapper'); // selection of the loader element
+        loader.style.opacity = '0';
+        setTimeout(function() {
+            loader.style.display = 'none';
+        }, 500);
+        
+    }, 500);
+});
+
 // ==================== UTILIDADES ====================
 const utils = {
   getElement: (selector) => document.querySelector(selector),
