@@ -1,8 +1,8 @@
 # 🚀 Rafael Ruiz Sanchez Portfolio
 
-Welcome to the personal portfolio of **Rafael Ruiz Sanchez**, a developer specialized in **Salesforce** and modern web technologies.
+Welcome to the personal portfolio of **Rafael Ruiz Sanchez**, Software Engineer specialized in **AI Workflows**, **Enterprise Automation**, **Python**, **Java**, **TypeScript**, and **CI/CD**.
 
-This project stands out for its clean design, optimized images, and an organized structure that reflects real and personalized work.
+This project stands out for its clean design, optimized assets, and an organized structure reflecting enterprise-grade engineering work.
 
 ---
 

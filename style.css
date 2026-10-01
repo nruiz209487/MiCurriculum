@@ -55,34 +55,86 @@ body {
 }
 
 /* ====================  NAVBAR STYLES ==================== */
+.navbar-brand {
+  display: inline-flex !important;
+  align-items: center;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+  flex-shrink: 0;
+  transition: opacity 0.2s ease;
+}
+
+.navbar-brand:hover {
+  opacity: 0.9;
+}
+
+.brand-name {
+  font-weight: 600;
+  color: #2c3e50;
+  letter-spacing: -0.2px;
+  white-space: nowrap;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover .brand-name {
+  color: var(--primary-color);
+}
+
 .profile-pic {
   width: 40px;
   min-width: 40px;
   height: 40px;
   object-fit: cover;
   margin-right: 10px;
+  flex-shrink: 0;
+  border-radius: 50%;
 }
 
-@media (max-width: 1200px) {
-  .navbar-brand {
-    display: none;
-  }
+.navbar-toggler {
+  padding: 0.35rem 0.6rem;
+  font-size: 1rem;
+  border-color: rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
 }
-/* Estilo original para Mobile */
-@media (max-width: 1020px) {
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+/* Mobile & Tablet (< 992px) */
+@media (max-width: 991.98px) {
+  .navbar-brand {
+    max-width: calc(100% - 60px);
+  }
+
+  .brand-name {
+    font-size: clamp(0.85rem, 3.8vw, 1.1rem);
+  }
+
+  .profile-pic {
+    width: 36px;
+    min-width: 36px;
+    height: 36px;
+    margin-right: 8px;
+  }
+
   .navbar-nav {
     text-align: center;
+    padding: 1rem 0;
   }
 
   .nav-link {
     font-weight: 500;
     color: #2c3e50 !important;
-    margin: 10px 0;
+    margin: 8px 0;
     position: relative;
     transition: all 0.3s ease;
     display: block;
     text-align: center !important;
-    padding: 10px 0 !important;
+    padding: 8px 0 !important;
+    font-size: 1rem;
   }
 
   .nav-link::after {
@@ -90,7 +142,7 @@ body {
     position: absolute;
     width: 0;
     height: 2px;
-    bottom: 5px;
+    bottom: 2px;
     left: 50%;
     background: linear-gradient(135deg, #667eea 0%, #2d5595 100%);
     transition: all 0.3s ease;
@@ -99,18 +151,49 @@ body {
 
   .nav-link:hover::after,
   .nav-link.active::after {
-    width: 60px;
+    width: 50px;
   }
 }
 
-/* Estilo original para desktop */
-@media (min-width: 899px) {
+/* Very small mobile screens (< 380px) */
+@media (max-width: 380px) {
+  .brand-name {
+    font-size: 0.82rem;
+  }
+
+  .profile-pic {
+    width: 32px;
+    min-width: 32px;
+    height: 32px;
+    margin-right: 6px;
+  }
+}
+
+/* Laptops & screens < 24 inches (992px to 1250px) */
+@media (min-width: 992px) {
+  .navbar-brand {
+    margin-right: 0.75rem;
+  }
+
+  .brand-name {
+    font-size: 1.05rem;
+  }
+
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+  }
+
   .nav-link {
     font-weight: 500;
     color: #2c3e50 !important;
-    margin: 0 10px;
+    margin: 0 2px !important;
+    padding: 6px 7px !important;
+    font-size: 0.85rem;
     position: relative;
     transition: all 0.3s ease;
+    white-space: nowrap;
   }
 
   .nav-link::after {
@@ -118,7 +201,7 @@ body {
     position: absolute;
     width: 0;
     height: 2px;
-    bottom: -5px;
+    bottom: -3px;
     left: 50%;
     background: linear-gradient(135deg, #667eea 0%, #2d5595 100%);
     transition: all 0.3s ease;
@@ -128,6 +211,23 @@ body {
   .nav-link:hover::after,
   .nav-link.active::after {
     width: 80%;
+  }
+}
+
+/* Screens >= 1250px (Desktops 24"+ and large screens) */
+@media (min-width: 1250px) {
+  .navbar-brand {
+    margin-right: 1.25rem;
+  }
+
+  .brand-name {
+    font-size: 1.2rem;
+  }
+
+  .nav-link {
+    margin: 0 5px !important;
+    padding: 8px 10px !important;
+    font-size: 0.92rem;
   }
 }
 
@@ -481,6 +581,19 @@ body {
   margin-top: 0.6rem;
 }
 
+#technologies img {
+  height: 40px;
+  width: auto;
+  max-width: 44px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+#technologies img:hover {
+  transform: scale(1.15);
+}
+
 #technologies p {
   color: #666;
   font-size: 0.9rem;
@@ -524,6 +637,19 @@ body {
   font-weight: 600;
   margin-bottom: 1rem;
   margin-top: 0.6rem;
+}
+
+#devops img {
+  height: 40px;
+  width: auto;
+  max-width: 44px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+#devops img:hover {
+  transform: scale(1.15);
 }
 
 #devops p {
